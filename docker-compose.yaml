@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+
+  git-inspired-backend-nov-java:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: git-inspired-backend-nov-java
+    container_name: git-inspired-backend-nov-java
+    restart: on-failure
+    ports:
+      - "6060:6060"
+
